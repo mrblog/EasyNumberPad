@@ -7,6 +7,7 @@
 //
 
 #import "EasyNumberPadViewController.h"
+#import "EasyNumberPad.h"
 
 #define CONTAINER_WIDTH 344
 #define CONTAINER_HEIGHT 540
@@ -60,6 +61,13 @@
     textContainer.backgroundColor = [UIColor whiteColor];
     textContainer.layer.cornerRadius = 5;
     [containerView addSubview:textContainer];
+    
+    UIButton *goButton = [[UIButton alloc] initWithFrame:CGRectMake(CONTAINER_WIDTH-BUTTON_SPACING-BUTTON_SIZE, BUTTON_SPACING, BUTTON_SIZE, BUTTON_SIZE)];
+    [goButton setImage:[UIImage imageNamed:@"Go"] forState:UIControlStateNormal];
+    [containerView addSubview:goButton];
+    
+    EasyNumberPad *pad = [[EasyNumberPad alloc] initWithFrame:CGRectMake(BUTTON_SPACING, textContainer.frame.origin.y+BUTTON_SIZE+BUTTON_SPACING, CONTAINER_WIDTH-BUTTON_SPACING*2, BUTTON_SIZE*4+BUTTON_SPACING*3)];
+    [containerView addSubview:pad];
     
     [outer addSubview:containerView];
     

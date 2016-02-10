@@ -17,6 +17,11 @@
 		63A42BCF1C6BC57800524811 /* Slackey.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BCE1C6BC57800524811 /* Slackey.ttf */; };
 		63A42BD31C6BE25C00524811 /* PhewHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD11C6BE25C00524811 /* PhewHome.png */; };
 		63A42BD41C6BE25C00524811 /* PhewHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD21C6BE25C00524811 /* PhewHome@2x.png */; };
+		63A42BD71C6BF1CA00524811 /* Go.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD51C6BF1CA00524811 /* Go.png */; };
+		63A42BD81C6BF1CA00524811 /* Go@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD61C6BF1CA00524811 /* Go@2x.png */; };
+		63A42BDB1C6BF2B100524811 /* EasyNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BDA1C6BF2B100524811 /* EasyNumberPad.m */; };
+		63A42BDE1C6BFCB000524811 /* Backspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BDC1C6BFCB000524811 /* Backspace.png */; };
+		63A42BDF1C6BFCB000524811 /* Backspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BDD1C6BFCB000524811 /* Backspace@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,12 @@
 		63A42BCE1C6BC57800524811 /* Slackey.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slackey.ttf; sourceTree = "<group>"; };
 		63A42BD11C6BE25C00524811 /* PhewHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PhewHome.png; path = Resources/PhewHome.png; sourceTree = "<group>"; };
 		63A42BD21C6BE25C00524811 /* PhewHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhewHome@2x.png"; path = "Resources/PhewHome@2x.png"; sourceTree = "<group>"; };
+		63A42BD51C6BF1CA00524811 /* Go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Go.png; sourceTree = "<group>"; };
+		63A42BD61C6BF1CA00524811 /* Go@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Go@2x.png"; sourceTree = "<group>"; };
+		63A42BD91C6BF2B100524811 /* EasyNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EasyNumberPad.h; path = EasyNumberPad/EasyNumberPad.h; sourceTree = SOURCE_ROOT; };
+		63A42BDA1C6BF2B100524811 /* EasyNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EasyNumberPad.m; path = EasyNumberPad/EasyNumberPad.m; sourceTree = SOURCE_ROOT; };
+		63A42BDC1C6BFCB000524811 /* Backspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backspace.png; sourceTree = "<group>"; };
+		63A42BDD1C6BFCB000524811 /* Backspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Backspace@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +107,8 @@
 				63A42BCD1C6BC57800524811 /* Resources */,
 				63A42BCA1C6BC50200524811 /* RZNumberPad.h */,
 				63A42BCB1C6BC50200524811 /* RZNumberPad.m */,
+				63A42BD91C6BF2B100524811 /* EasyNumberPad.h */,
+				63A42BDA1C6BF2B100524811 /* EasyNumberPad.m */,
 				63A42BC11C6BAF2000524811 /* EasyNumberPadViewController.h */,
 				63A42BC21C6BAF2000524811 /* EasyNumberPadViewController.m */,
 			);
@@ -105,6 +118,10 @@
 		63A42BCD1C6BC57800524811 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				63A42BDC1C6BFCB000524811 /* Backspace.png */,
+				63A42BDD1C6BFCB000524811 /* Backspace@2x.png */,
+				63A42BD51C6BF1CA00524811 /* Go.png */,
+				63A42BD61C6BF1CA00524811 /* Go@2x.png */,
 				63A42BCE1C6BC57800524811 /* Slackey.ttf */,
 			);
 			name = Resources;
@@ -180,7 +197,11 @@
 				63A42BD31C6BE25C00524811 /* PhewHome.png in Resources */,
 				63A42BB61C6BAB0A00524811 /* Assets.xcassets in Resources */,
 				63A42BCF1C6BC57800524811 /* Slackey.ttf in Resources */,
+				63A42BD71C6BF1CA00524811 /* Go.png in Resources */,
 				63A42BD41C6BE25C00524811 /* PhewHome@2x.png in Resources */,
+				63A42BDF1C6BFCB000524811 /* Backspace@2x.png in Resources */,
+				63A42BDE1C6BFCB000524811 /* Backspace.png in Resources */,
+				63A42BD81C6BF1CA00524811 /* Go@2x.png in Resources */,
 				63A42BB91C6BAB0A00524811 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +215,7 @@
 			files = (
 				63A42BB41C6BAB0A00524811 /* AppDelegate.m in Sources */,
 				63A42BB11C6BAB0A00524811 /* main.m in Sources */,
+				63A42BDB1C6BF2B100524811 /* EasyNumberPad.m in Sources */,
 				63A42BC61C6BAF4C00524811 /* ViewController.m in Sources */,
 				63A42BC31C6BAF2000524811 /* EasyNumberPadViewController.m in Sources */,
 				63A42BCC1C6BC50200524811 /* RZNumberPad.m in Sources */,

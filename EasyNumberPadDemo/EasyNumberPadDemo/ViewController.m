@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"viewDidLoad");
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     toolbar.frame = CGRectMake(self.view.bounds.origin.x, 20, self.view.frame.size.width, 44);
     
@@ -38,8 +37,6 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSLog(@"viewDidAppear");
-
     EasyNumberPadViewController *pad = [[EasyNumberPadViewController alloc] init];
     [self presentViewController:pad animated:YES completion:nil];
 
