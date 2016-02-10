@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63A42BB11C6BAB0A00524811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BB01C6BAB0A00524811 /* main.m */; };
+		63A42BB41C6BAB0A00524811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BB31C6BAB0A00524811 /* AppDelegate.m */; };
+		63A42BB61C6BAB0A00524811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BB51C6BAB0A00524811 /* Assets.xcassets */; };
+		63A42BB91C6BAB0A00524811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BB71C6BAB0A00524811 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63A42BAC1C6BAB0A00524811 /* EasyNumberPadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNumberPadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A42BB01C6BAB0A00524811 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63A42BB21C6BAB0A00524811 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63A42BB31C6BAB0A00524811 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63A42BB51C6BAB0A00524811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A42BB81C6BAB0A00524811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63A42BBA1C6BAB0A00524811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63A42BA91C6BAB0A00524811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63A42BA31C6BAB0A00524811 = {
+			isa = PBXGroup;
+			children = (
+				63A42BAE1C6BAB0A00524811 /* EasyNumberPadDemo */,
+				63A42BAD1C6BAB0A00524811 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63A42BAD1C6BAB0A00524811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BAC1C6BAB0A00524811 /* EasyNumberPadDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63A42BAE1C6BAB0A00524811 /* EasyNumberPadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BB21C6BAB0A00524811 /* AppDelegate.h */,
+				63A42BB31C6BAB0A00524811 /* AppDelegate.m */,
+				63A42BB51C6BAB0A00524811 /* Assets.xcassets */,
+				63A42BB71C6BAB0A00524811 /* LaunchScreen.storyboard */,
+				63A42BBA1C6BAB0A00524811 /* Info.plist */,
+				63A42BAF1C6BAB0A00524811 /* Supporting Files */,
+			);
+			path = EasyNumberPadDemo;
+			sourceTree = "<group>";
+		};
+		63A42BAF1C6BAB0A00524811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BB01C6BAB0A00524811 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A42BAB1C6BAB0A00524811 /* EasyNumberPadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A42BBD1C6BAB0A00524811 /* Build configuration list for PBXNativeTarget "EasyNumberPadDemo" */;
+			buildPhases = (
+				63A42BA81C6BAB0A00524811 /* Sources */,
+				63A42BA91C6BAB0A00524811 /* Frameworks */,
+				63A42BAA1C6BAB0A00524811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyNumberPadDemo;
+			productName = EasyNumberPadDemo;
+			productReference = 63A42BAC1C6BAB0A00524811 /* EasyNumberPadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63A42BA41C6BAB0A00524811 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = BDT.COM;
+				TargetAttributes = {
+					63A42BAB1C6BAB0A00524811 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 63A42BA71C6BAB0A00524811 /* Build configuration list for PBXProject "EasyNumberPadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63A42BA31C6BAB0A00524811;
+			productRefGroup = 63A42BAD1C6BAB0A00524811 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A42BAB1C6BAB0A00524811 /* EasyNumberPadDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A42BAA1C6BAB0A00524811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A42BB61C6BAB0A00524811 /* Assets.xcassets in Resources */,
+				63A42BB91C6BAB0A00524811 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63A42BA81C6BAB0A00524811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A42BB41C6BAB0A00524811 /* AppDelegate.m in Sources */,
+				63A42BB11C6BAB0A00524811 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63A42BB71C6BAB0A00524811 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A42BB81C6BAB0A00524811 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63A42BBB1C6BAB0A00524811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63A42BBC1C6BAB0A00524811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63A42BBE1C6BAB0A00524811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyNumberPadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdt.EasyNumberPad.EasyNumberPadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63A42BBF1C6BAB0A00524811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyNumberPadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdt.EasyNumberPad.EasyNumberPadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63A42BA71C6BAB0A00524811 /* Build configuration list for PBXProject "EasyNumberPadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A42BBB1C6BAB0A00524811 /* Debug */,
+				63A42BBC1C6BAB0A00524811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A42BBD1C6BAB0A00524811 /* Build configuration list for PBXNativeTarget "EasyNumberPadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A42BBE1C6BAB0A00524811 /* Debug */,
+				63A42BBF1C6BAB0A00524811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63A42BA41C6BAB0A00524811 /* Project object */;
+}
