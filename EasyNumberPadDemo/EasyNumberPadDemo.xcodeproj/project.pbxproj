@@ -11,6 +11,12 @@
 		63A42BB41C6BAB0A00524811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BB31C6BAB0A00524811 /* AppDelegate.m */; };
 		63A42BB61C6BAB0A00524811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BB51C6BAB0A00524811 /* Assets.xcassets */; };
 		63A42BB91C6BAB0A00524811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BB71C6BAB0A00524811 /* LaunchScreen.storyboard */; };
+		63A42BC31C6BAF2000524811 /* EasyNumberPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BC21C6BAF2000524811 /* EasyNumberPadViewController.m */; };
+		63A42BC61C6BAF4C00524811 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BC51C6BAF4C00524811 /* ViewController.m */; };
+		63A42BCC1C6BC50200524811 /* RZNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42BCB1C6BC50200524811 /* RZNumberPad.m */; };
+		63A42BCF1C6BC57800524811 /* Slackey.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BCE1C6BC57800524811 /* Slackey.ttf */; };
+		63A42BD31C6BE25C00524811 /* PhewHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD11C6BE25C00524811 /* PhewHome.png */; };
+		63A42BD41C6BE25C00524811 /* PhewHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A42BD21C6BE25C00524811 /* PhewHome@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,15 @@
 		63A42BB51C6BAB0A00524811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63A42BB81C6BAB0A00524811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A42BBA1C6BAB0A00524811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A42BC11C6BAF2000524811 /* EasyNumberPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EasyNumberPadViewController.h; path = EasyNumberPad/EasyNumberPadViewController.h; sourceTree = SOURCE_ROOT; };
+		63A42BC21C6BAF2000524811 /* EasyNumberPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EasyNumberPadViewController.m; path = EasyNumberPad/EasyNumberPadViewController.m; sourceTree = SOURCE_ROOT; };
+		63A42BC41C6BAF4C00524811 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63A42BC51C6BAF4C00524811 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63A42BCA1C6BC50200524811 /* RZNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RZNumberPad.h; path = EasyNumberPad/RZNumberPad.h; sourceTree = SOURCE_ROOT; };
+		63A42BCB1C6BC50200524811 /* RZNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RZNumberPad.m; path = EasyNumberPad/RZNumberPad.m; sourceTree = SOURCE_ROOT; };
+		63A42BCE1C6BC57800524811 /* Slackey.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slackey.ttf; sourceTree = "<group>"; };
+		63A42BD11C6BE25C00524811 /* PhewHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PhewHome.png; path = Resources/PhewHome.png; sourceTree = "<group>"; };
+		63A42BD21C6BE25C00524811 /* PhewHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhewHome@2x.png"; path = "Resources/PhewHome@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +68,12 @@
 		63A42BAE1C6BAB0A00524811 /* EasyNumberPadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63A42BD01C6BE24900524811 /* Resources */,
 				63A42BB21C6BAB0A00524811 /* AppDelegate.h */,
 				63A42BB31C6BAB0A00524811 /* AppDelegate.m */,
+				63A42BC41C6BAF4C00524811 /* ViewController.h */,
+				63A42BC51C6BAF4C00524811 /* ViewController.m */,
+				63A42BC01C6BAEB100524811 /* EasyNumberPad */,
 				63A42BB51C6BAB0A00524811 /* Assets.xcassets */,
 				63A42BB71C6BAB0A00524811 /* LaunchScreen.storyboard */,
 				63A42BBA1C6BAB0A00524811 /* Info.plist */,
@@ -69,6 +88,36 @@
 				63A42BB01C6BAB0A00524811 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63A42BC01C6BAEB100524811 /* EasyNumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BCD1C6BC57800524811 /* Resources */,
+				63A42BCA1C6BC50200524811 /* RZNumberPad.h */,
+				63A42BCB1C6BC50200524811 /* RZNumberPad.m */,
+				63A42BC11C6BAF2000524811 /* EasyNumberPadViewController.h */,
+				63A42BC21C6BAF2000524811 /* EasyNumberPadViewController.m */,
+			);
+			name = EasyNumberPad;
+			sourceTree = "<group>";
+		};
+		63A42BCD1C6BC57800524811 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BCE1C6BC57800524811 /* Slackey.ttf */,
+			);
+			name = Resources;
+			path = EasyNumberPad/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A42BD01C6BE24900524811 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63A42BD11C6BE25C00524811 /* PhewHome.png */,
+				63A42BD21C6BE25C00524811 /* PhewHome@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A42BD31C6BE25C00524811 /* PhewHome.png in Resources */,
 				63A42BB61C6BAB0A00524811 /* Assets.xcassets in Resources */,
+				63A42BCF1C6BC57800524811 /* Slackey.ttf in Resources */,
+				63A42BD41C6BE25C00524811 /* PhewHome@2x.png in Resources */,
 				63A42BB91C6BAB0A00524811 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +194,9 @@
 			files = (
 				63A42BB41C6BAB0A00524811 /* AppDelegate.m in Sources */,
 				63A42BB11C6BAB0A00524811 /* main.m in Sources */,
+				63A42BC61C6BAF4C00524811 /* ViewController.m in Sources */,
+				63A42BC31C6BAF2000524811 /* EasyNumberPadViewController.m in Sources */,
+				63A42BCC1C6BC50200524811 /* RZNumberPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdt.EasyNumberPad.EasyNumberPadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -262,6 +318,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdt.EasyNumberPad.EasyNumberPadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
