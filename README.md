@@ -16,6 +16,8 @@ EasyNumberPad consists of a single component:
 
 **Use:**
 ```objective-c
+#import "EasyNumberPadViewController.h"
+
 EasyNumberPadViewController *pad = [[EasyNumberPadViewController alloc] init];
 pad.delegate = self;
 [self presentViewController:pad animated:YES completion:nil];
