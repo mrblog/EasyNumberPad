@@ -24,6 +24,8 @@
     BOOL savedDefinesContext;
 }
 
+@synthesize textField;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         savedProvidesStyle = self.presentingViewController.providesPresentationContextTransitionStyle;
@@ -41,6 +43,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+ 
     UIView *overlay = [[UIView alloc] init];
     overlay.frame = CGRectMake(self.view.bounds.origin.x, 0, self.view.frame.size.width, 64);
     overlay.backgroundColor = [UIColor whiteColor];
@@ -51,6 +54,13 @@
     UIView *outer = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height-64)];
     outer.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     outer.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *dimmedView = [[UIButton alloc]init];
+    dimmedView.frame = CGRectMake(0, 0, outer.frame.size.width, outer.frame.size.height);
+    dimmedView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    dimmedView.backgroundColor = [UIColor clearColor];
+    [dimmedView addTarget:self action:@selector(outerViewAction) forControlEvents:UIControlEventTouchUpInside];
+    [outer addSubview:dimmedView];
 
     UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake((outer.frame.size.width-CONTAINER_WIDTH) / 2,  108, CONTAINER_WIDTH, CONTAINER_HEIGHT)];
     containerView.backgroundColor = [UIColor colorWithRed:207./255. green:226./255. blue:243./255. alpha:1.0];
@@ -64,10 +74,19 @@
     
     UIButton *goButton = [[UIButton alloc] initWithFrame:CGRectMake(CONTAINER_WIDTH-BUTTON_SPACING-BUTTON_SIZE, BUTTON_SPACING, BUTTON_SIZE, BUTTON_SIZE)];
     [goButton setImage:[UIImage imageNamed:@"Go"] forState:UIControlStateNormal];
+    [goButton addTarget:self action:@selector(goButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [containerView addSubview:goButton];
     
     EasyNumberPad *pad = [[EasyNumberPad alloc] initWithFrame:CGRectMake(BUTTON_SPACING, textContainer.frame.origin.y+BUTTON_SIZE+BUTTON_SPACING, CONTAINER_WIDTH-BUTTON_SPACING*2, BUTTON_SIZE*4+BUTTON_SPACING*3)];
     [containerView addSubview:pad];
+    
+    
+    textField = [[UITextField alloc] initWithFrame:CGRectMake(15, 5, textContainer.frame.size.width-10, textContainer.frame.size.height-10)];
+    [pad linkToTextField:textField];
+    
+    [textField setTextColor:[UIColor darkGrayColor]];
+    [textField setFont:[UIFont fontWithName:@"Helvetica Neue" size:34]];
+    [textContainer addSubview:textField];
     
     [outer addSubview:containerView];
     
@@ -80,6 +99,8 @@
     [outer addSubview:heading];
 
     [self.view addSubview:outer];
+    
+    [textField becomeFirstResponder];
 }
 
 
@@ -93,14 +114,21 @@
     [super didReceiveMemoryWarning];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - actions
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)goButtonPressed:(id)sender {
+    NSLog(@"goButtonPressed: text %@", textField.text);
+    if (_delegate != nil) {
+        [_delegate done:self withText:textField.text];
+    }
+
 }
-*/
 
+-(void) outerViewAction {
+    NSLog(@"outerViewAction");
+    if (_delegate != nil) {
+        [_delegate cancelled:self];
+    }
+
+}
 @end

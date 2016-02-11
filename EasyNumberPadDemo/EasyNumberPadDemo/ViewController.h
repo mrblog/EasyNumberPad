@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "EasyNumberPadViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EasyNumberPadDelegate>
 
 @end

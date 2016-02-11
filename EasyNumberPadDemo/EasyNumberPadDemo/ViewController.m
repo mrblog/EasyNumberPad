@@ -38,6 +38,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     EasyNumberPadViewController *pad = [[EasyNumberPadViewController alloc] init];
+    pad.delegate = self;
     [self presentViewController:pad animated:YES completion:nil];
 
 }
@@ -48,20 +49,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-#pragma - mark local methods
+#pragma mark - local methods
 
 -(void)homeButton:(id)sender {
-    
+    EasyNumberPadViewController *pad = [[EasyNumberPadViewController alloc] init];
+    pad.delegate = self;
+    [self presentViewController:pad animated:YES completion:nil];
+
 }
+
+#pragma mark - EasyNumberPadDelegate
+
+-(void) done:(EasyNumberPadViewController *)controller withText:(NSString *)text {
+    NSLog(@"text: %@", text);
+    controller.textField.text = @"";
+}
+
+-(void) cancelled:(EasyNumberPadViewController *)controller {
+    controller.delegate = nil;
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

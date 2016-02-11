@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class EasyNumberPadViewController;
+
+@protocol EasyNumberPadDelegate <NSObject>
+
+@required
+-(void) done:(EasyNumberPadViewController *)controller withText:(NSString *)text;
+-(void) cancelled:(EasyNumberPadViewController *)controller;
+@end
+
 @interface EasyNumberPadViewController : UIViewController
 
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, assign) id<EasyNumberPadDelegate> delegate;
+
 @end
+
+
