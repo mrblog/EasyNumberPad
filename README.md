@@ -48,7 +48,7 @@ Acknowledgements
 ------------------------
 
 * Lee Loughnane for design and button graphics
-* Uses [RZNumberPad](https://github.com/Raizlabs/RZNumberPad/blob/master/LICENSE) Copyright 2014 Raizlabs and other contributors
+* Uses [RZNumberPad](https://github.com/Raizlabs/RZNumberPad/) Copyright 2014 Raizlabs and other contributors
    http://raizlabs.com/
    
    
