@@ -30,7 +30,14 @@ Installation
 
 Copy the contents of the `EasyNumberPad` folder into your project.
 
+Add the Slacky font to your apps `Info.plist` file.
 
+```
+<key>UIAppFonts</key>
+<array>
+    <string>Slackey.ttf</string>
+</array>
+```
 
 Implementing `EasyNumberPadDelegate` Protocol
 ------------------------
