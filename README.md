@@ -50,5 +50,6 @@ Acknowledgements
 * Lee Loughnane for design and button graphics
 * Uses [RZNumberPad](https://github.com/Raizlabs/RZNumberPad/) Copyright 2014 Raizlabs and other contributors
    http://raizlabs.com/
+* Uses Google's [Slackey](https://www.google.com/fonts/specimen/Slackey) font.
    
    
