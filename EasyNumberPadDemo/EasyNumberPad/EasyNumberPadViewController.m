@@ -35,6 +35,8 @@
         
         [self setModalPresentationStyle:UIModalPresentationOverCurrentContext];
 
+        // initialize textField here to ensure it is available in completion block
+        textField = [[UITextField alloc] init];
     }
     return self;
 }
@@ -81,7 +83,7 @@
     [containerView addSubview:pad];
     
     
-    textField = [[UITextField alloc] initWithFrame:CGRectMake(15, 5, textContainer.frame.size.width-10, textContainer.frame.size.height-10)];
+    textField.frame = CGRectMake(15, 5, textContainer.frame.size.width-10, textContainer.frame.size.height-10);
     [pad linkToTextField:textField];
     
     [textField setTextColor:[UIColor darkGrayColor]];
